@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>A Serverless Node.js API</h1>
+      <h1>Serverless Node.js API</h1>
       <button onClick={handleClick} className="btn">Fetch Data</button>
       {/* Displaying data conditionally */}
       {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
