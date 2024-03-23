@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.1.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "babel-preset-next": "^1.4.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4"
   }
