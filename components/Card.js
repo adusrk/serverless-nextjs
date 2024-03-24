@@ -5,7 +5,9 @@ const Card = ({data}) => {
   return (
     <>
       <div className={styles.card}>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <div className={styles.cardContent}>
+    {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : "Welcome to the server"}
+  </div>
       </div>
     </>
   );
