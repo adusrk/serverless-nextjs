@@ -49,7 +49,12 @@
     animation: glow 2s infinite ease-in-out;
   }
   .cardContent {
+    max-height: 90%; 
+    
+  }
+  .temp{
     max-height: 90%; /* Adjust based on your design */
+    max-width: 80%;
   }
   @media (max-width: 768px) {
     .card {
