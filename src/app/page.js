@@ -1,14 +1,17 @@
-'use client';
+"use client";
 import styles from "./page.module.css";
 import { useState } from "react";
+import Card from "../../components/Card";
 
 export default function Home() {
   const [data, setData] = useState(null);
   const [email, setEmail] = useState(""); // State to hold the email value
+  const [isDataFetched, setIsDataFetched] = useState(false); // State to track if data is fetched
 
   const handleClick = async () => {
     const response = await fetch("/api/leads");
     setData(await response.json());
+    setIsDataFetched(true); // Set to true once data is fetched
   };
 
   const handleClickTwo = async () => {
@@ -24,19 +27,22 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>Serverless Node.js API</h1>
-      <button onClick={handleClick} className="btn">Fetch Data</button>
-      {/* Displaying data conditionally */}
-      {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
-      <div>
+      <h1 className={styles.head}>Serverless Node.js API</h1>
+      <button onClick={handleClick} className={styles.btn}>
+        Fetch Data
+      </button>
+      {isDataFetched && <Card data={data} />}{" "}
+      <div className={styles}>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)} // Update email state on change
           placeholder="Enter email"
-          className="emailInput" // Add your class for styling if needed
+          className={styles.emailInput} // Add your class for styling if needed
         />
-        <button onClick={handleClickTwo} className="btn">Submit Email</button>
+        <button onClick={handleClickTwo} className={styles.btn}>
+          Submit Email
+        </button>
       </div>
     </main>
   );
