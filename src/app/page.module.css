@@ -48,7 +48,7 @@
 }
 @media (max-width: 768px) {
   .main {
-    padding: 4rem 1rem; /* Reduced padding */
+    padding: 4rem 1rem; 
   }
 
   .emailInput, .btn {
