@@ -34,7 +34,7 @@ const Card = ({ data }) => {
               </li>
               <br />
               <li>
-                <strong style={{ color: 'skyblue', fontStyle: 'italic' }}>Efficient Request Routing via API Gateway:</strong>{" "}
+                <strong style={{ color: 'skyblue', fontStyle: 'italic' }}>Efficient Request Routing via API Gateway:</strong>
                 Acting as the pivotal bridge, AWS API Gateway diligently directs
                 incoming traffic to the corresponding Lambda functions. It
                 streamlines endpoint management while bolstering security
