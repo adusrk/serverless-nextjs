@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import { useState } from "react";
 import Card from "../../components/Card";
+import ConsoleText from "../../components/ConsoleText";
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -27,7 +28,10 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1 className={styles.head}>Serverless Node.js API</h1>
+       <ConsoleText 
+        words={['Serverless Node.js API.', 'Using Neon', 'Made with AWS Lambda']} 
+        colors={['tomato', 'rebeccapurple', 'lightblue']}
+      />
       <button onClick={handleClick} className={styles.btn}>
         Fetch Data
       </button>
@@ -44,6 +48,7 @@ export default function Home() {
           Submit Email
         </button>
       </div>
+      <p className={styles.c}>&copy; Adnan Haider</p>
     </main>
   );
 }

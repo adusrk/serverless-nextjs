@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:700');
+
+.consoleContainer {
+  font-family: 'Khula', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  color: white;
+}
+
+.consoleUnderscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  margin-left: 10px;
+}
+
+.hidden {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+    .consoleContainer {
+      font-size: 2em; /* Smaller font size for smaller screens */
+    }
+  }
