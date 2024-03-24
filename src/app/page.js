@@ -35,7 +35,7 @@ export default function Home() {
       <button onClick={handleClick} className={styles.btn}>
         Fetch Data
       </button>
-      {isDataFetched && <Card data={data} />}{" "}
+      <Card data={data} />
       <div className={styles.x}>
         <input
           type="email"
