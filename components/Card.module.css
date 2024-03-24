@@ -48,3 +48,10 @@
   .card {
     animation: glow 2s infinite ease-in-out;
   }
+  @media (max-width: 768px) {
+    .card {
+      width: 90vw; /* More width on smaller screens */
+      font-size: 0.7em;
+      padding-top: 100px;
+    }
+  }

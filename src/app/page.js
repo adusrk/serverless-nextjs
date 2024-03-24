@@ -32,7 +32,7 @@ export default function Home() {
         Fetch Data
       </button>
       {isDataFetched && <Card data={data} />}{" "}
-      <div className={styles}>
+      <div className={styles.x}>
         <input
           type="email"
           value={email}
