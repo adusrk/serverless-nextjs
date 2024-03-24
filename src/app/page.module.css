@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 5rem;
   min-height: 100vh;
   background-color: #000000;
   opacity: 1;
@@ -13,7 +13,7 @@
 .emailInput {
   width: 30vw; /* Adjust width as needed */
   padding: 10px 15px;
-  margin: 10px 0;
+  margin-top: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: none;
@@ -33,7 +33,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin: 15px;
+  margin: 10px;
 }
 
 .btn:hover {
@@ -48,7 +48,7 @@
 }
 @media (max-width: 768px) {
   .main {
-    padding: 4rem 1rem; 
+    padding: 1rem 1rem; 
   }
 
   .emailInput, .btn {
