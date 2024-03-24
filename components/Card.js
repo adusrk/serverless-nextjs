@@ -52,10 +52,10 @@ const Card = ({ data }) => {
               <br />
               <li>
                 <strong style={{ color: 'skyblue', fontStyle: 'italic' }}>Dynamic Next.js Frontend Hosted on Vercel:</strong> The
-                application's frontend is built using Next.js, renowned for its
+                application&apos;s frontend is built using Next.js, renowned for its
                 performance, with server-side rendering and static site
                 generation capabilities. Deployed on Vercel, it enjoys a swift,
-                global reach thanks to Vercel's edge network, ensuring that
+                global reach thanks to Vercel&apos;s edge network, ensuring that
                 content is delivered promptly to users anywhere in the world.
               </li>
               <br />
