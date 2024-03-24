@@ -57,3 +57,7 @@
       font-size: 0.7em;
     }
   }
+  .cardSmall {
+    height: 100px; /* Or any other height you prefer when there's no data */
+  }
+  
